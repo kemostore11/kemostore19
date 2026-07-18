@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/&lt;/loc&gt;
+        &lt;priority&gt;1.0&lt;/priority&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/watches.html&lt;/loc&gt;
+        &lt;priority&gt;0.8&lt;/priority&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/bags.html&lt;/loc&gt;
+        &lt;priority&gt;0.8&lt;/priority&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/favorites.html&lt;/loc&gt;
+        &lt;priority&gt;0.4&lt;/priority&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/Another%20Products.html&lt;/loc&gt;
+        &lt;priority&gt;0.7&lt;/priority&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/World%20Cup%20Products.html&lt;/loc&gt;
+        &lt;priority&gt;0.7&lt;/priority&gt;
+    &lt;/url&gt;
+
+    &lt;url&gt;
+        &lt;loc&gt;https://YOUR-DOMAIN.COM/terms.html&lt;/loc&gt;
+        &lt;priority&gt;0.5&lt;/priority&gt;
+    &lt;/url&gt;
+
+&lt;/urlset&gt;</sitemap>
