@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<meta charset="UTF-8">
+<link rel="canonical" href="https://kemostore11.github.io/kemostore19/favorites.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title data-lang="favo">My Favorites - Kemo Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="category-page favorites-page">
+
+
+<!-- HEADER -->
+
+<header class="category-header">
+
+<div class="category-header-content">
+
+<h1 class="favorites-title" data-lang="favorite-title">
+    My Favorites <span>❤️</span>
+</h1>
+
+<p data-lang="favorite-sub">
+Your Saved Products
+</p>
+
+</div>
+
+</header>
+<div class="custom-view">
+
+    <button id="viewButton" data-lang="custom-view">
+        ✨ Customize Your View ▾
+    </button>
+</div>
+
+    <div class="view-menu" id="viewMenu">
+
+        <div data-sort="az" data-lang="az">
+            Name: A - Z
+        </div>
+
+        <div data-sort="default" data-lang="default">
+            Default Order
+        </div>
+    </div>
+
+
+<!-- FAVORITES PRODUCTS -->
+<div class="favorites-hint" id="favoritesHint" data-lang="favoritesHint">
+    ❤️ You can tap any product here to go directly to it.
+</div>
+<section class="products" id="favoritesList"></section>
+
+<!-- EMPTY MESSAGE -->
+
+<div id="emptyFavorites" data-lang="emptyFavorites">
+
+No Favorite Products Yet ❤️
+
+</div>
+
+    <button id="backToTop">
+        ↑
+    </button>
+
+<div class="kemo-fav-div" onclick="removeAllFavorites()" data-lang="remove-all-favorites">
+    🗑 Remove All Favorites
+</div>
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+<h2 data-lang="kemo">Kemo Store</h2>
+
+<p class="footer-tagline" data-lang="footer-tagline">
+Amazon Affiliate Marketing
+</p>
+
+<p class="footer-kemo" data-lang="footer-kemo">
+Luxury • Elegance • Timeless Style
+</p>
+
+
+<div class="social">
+
+<a href="index.html" data-lang="home">
+Home
+</a>
+
+
+<a href="watches.html" data-lang="watches">
+Watches
+</a>
+
+
+<a href="bags.html" data-lang="worldcup-products">
+World Cup products
+</a>
+
+</div>
+
+
+
+<p class="copyright" data-lang="copyright">
+
+© 2026 Kemo Store
+
+</p>
+
+</footer>
+<div id="confirmDelete" class="confirm-delete">
+
+    <div class="confirm-card">
+
+        <h3 data-lang="confirm-card">🗑 Remove All Favorites?</h3>
+
+        <p data-lang="confirm-delete">Are you sure you want to remove all favorites ?</p>
+
+        <div class="confirm-buttons">
+
+            <button onclick="confirmDeleteFavorites()">Yes</button>
+
+            <button onclick="closeConfirmDelete()">No</button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+    
+</body>
+</html>
