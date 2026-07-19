@@ -1,0 +1,2018 @@
+/* ==========================================================================
+   PURPLE THEME: DARK MODE FOOTER STYLING
+   ========================================================================== */
+body.dark-mode[data-theme="purple"] footer {
+    /* لون بنفسجي شديد الغمقان - فخم جداً */
+    background-color: #0e0512 !important;
+    
+    /* حدود علوية خفيفة جداً لتعطي فصلاً أنيقاً عن المحتوى */
+    border-top: 1px solid #3b0764 !important;
+    
+    /* لون النصوص والروابط في الفوتر ليكون متناسقاً */
+    color: #d8b4fe !important;
+}
+body.dark-mode[data-theme="midnight"]{
+    min-height: auto !important;
+}
+
+body.dark-mode[data-theme="midnight"] main,
+body.dark-mode[data-theme="midnight"] section:last-of-type{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+body.dark-mode[data-theme="midnight"] footer{
+    margin-top: 0 !important;
+}
+/* تعديل لون روابط السوشيال ميديا في هذا التيم فقط */
+body.dark-mode[data-theme="purple"] footer a {
+    color: #e9d5ff !important;
+}
+.favorites-page #backToTop{
+    display: none !important;
+}
+#hideThemeHint{
+    position:absolute;
+    top:5px;
+    right:8px;
+
+    border:none;
+    background:transparent;
+    color:inherit;
+
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* عربي */
+html[dir="rtl"] #hideThemeHint{
+    left:auto;
+    right:8px;
+}
+
+/* WATCHES PAGE BACK TO TOP FIX */
+
+body[data-category="watches"] #backToTop{
+    bottom: 25px !important;
+    right: 20px !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 999999 !important;
+}
+
+html[dir="rtl"] body[data-category="watches"] #backToTop{
+    left: 20px !important;
+    right: auto !important;
+}
+/* FORCE BACK TO TOP FIX */
+
+#backToTop{
+    position: relative !important;
+    bottom: 25px !important;
+    z-index: 999999 !important;
+    display: block;
+}
+
+/* English */
+html[dir="ltr"] #backToTop{
+    right: 20px !important;
+    left: auto !important;
+}
+
+/* Arabic */
+html[dir="rtl"] #backToTop{
+    left: 20px !important;
+    right: auto !important;
+}
+/* About Page - Midnight Theme + Dark Mode */
+body.about-page[data-theme="midnight"].dark-mode .about-hero{
+    background: linear-gradient(
+        135deg,
+        rgba(35,45,70,.88),
+        rgba(15,22,38,.95)
+    ) !important;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.08);
+
+    color:#fff;
+}
+#themeHint {
+    position: fixed;
+    bottom: 350px;
+    right: 20px;
+    z-index: 9999;
+    
+    /* مظهر خلفية زاهرة */
+    background: var(--card); /* لون خلفية الكارت الموحد في موقعك */
+    color: var(--text);      /* لون النص الموحد */
+    padding: 15px 25px;
+    border-radius: 20px;
+    border-left: 5px solid var(--primary); /* حدود جانبية للتميز */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    
+    /* منع خروج النص */
+    min-width: 200px;
+    max-width: 80%;
+    word-wrap: break-word;
+    text-align: center;
+    
+    /* أنيميشن بسيط للظهور */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* كود إضافي لحل مشكلة الاتجاه في اللغة العربية */
+[dir="rtl"] #themeHint {
+    /* نقل الشريط لجهة اليسار بدلاً من اليمين */
+    right: auto;
+    left: 20px;
+    
+    /* عكس الـ border ليكون من جهة اليمين بدلاً من اليسار */
+    border-left: none;
+    border-right: 5px solid var(--primary);
+}
+
+body[data-theme="midnight"].dark-mode .lang-container button span{
+    position: relative;
+    left: 5px; /* زود أو قلل الرقم حسب ما يناسبك */
+}
+body[data-theme="midnight"].dark-mode .lang-container{
+    transform: scale(0.9);
+    transform-origin: center;
+    gap:10px;
+    left:10px;
+}
+
+/* ===== FAVORITES SORT MENU FIX ===== */
+
+body.favorites-page .custom-view {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body.favorites-page #viewMenu {
+    position: absolute !important;
+    top:375px !important;
+    left:22px !important;
+    margin-top: 10px !important;
+    width: 260px;
+    z-index: 99999 !important;
+}
+
+/* Arabic Direction */
+html[dir="rtl"] body.favorites-page #viewMenu {
+    right: auto !important;
+    left: 0 !important;
+}
+
+
+/* ===== FORCE BACK TO TOP POSITION ===== */
+
+html[dir="ltr"] body #backToTop{
+    position: relative !important;
+    bottom: 25px !important;
+    right: 20px !important;
+    left: auto !important;
+    transform: none !important;
+    z-index: 999999 !important;
+}
+
+html[dir="rtl"] body #backToTop{
+    position: relative !important;
+    bottom: 25px !important;
+    left: 20px !important;
+    right: auto !important;
+    transform: none !important;
+    z-index: 999999 !important;
+}
+/* ===== HOME SHARE BUTTON RTL CONTROL ===== */
+
+html[dir="rtl"] body #shareBtn,
+html[dir="rtl"] body .share-btn,
+html[dir="rtl"] body .share-button,
+html[dir="rtl"] body .share-icon {
+    position: relative !important;
+    top: 10px !important;
+    left: 20px !important;
+    transform: translateX(-20px) !important;
+    z-index: 99999 !important;
+}
+/* منع القائمة من الخروج */
+body.favorites-page {
+    overflow-x: hidden;
+}
+/* تغيير لون خلفية صفحة المفضلة إلى لبني */
+/* إذا أردت تغيير لون الكروت أيضاً لتتناسق مع الخلفية اللبنية */
+/* ==========================================================================
+   PURPLE THEME: HERO BUTTON (DEEPER DARK MODE)
+   ========================================================================== */
+
+body.dark-mode[data-theme="purple"] .shop-btn {
+    /* تدرج من البنفسجي الداكن جداً إلى البنفسجي الملكي */
+    background: linear-gradient(135deg, #2e1065 0%, #581c87 100%) !important;
+    
+    /* لون النص: لون فاتح بمسحة بنفسجية ليكون متبايناً بوضوح */
+    color: #e9d5ff !important;
+    
+    /* حدود الزر: لون بنفسجي داكن ولكن بلمعة خفيفة */
+    border: 2px solid #7e22ce !important;
+    
+    /* ظل الزر: أكثر عمقاً وأغمق لتناسب الأجواء الداكنة */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+    
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+}
+/* خلفية صفحة المفضلة في وضع الميدنايت */
+body[data-theme="midnight"].dark-mode.favorites-page {
+    background-color: #0f172a !important; /* لون لبني داكن جداً ومريح للعين */
+}
+
+/* MIDNIGHT CONFIRM DELETE STYLE */
+
+body[data-theme="midnight"] .confirm-card{
+
+    background:#ffffff !important;
+    color:#0b4f8a !important;
+
+    border:2px solid #4da3d9;
+
+    box-shadow:0 15px 40px rgba(0,120,255,.25);
+}
+
+
+body[data-theme="midnight"] .confirm-card h3{
+
+    color:#0b4f8a !important;
+}
+
+
+body[data-theme="midnight"] .confirm-card p{
+
+    color:#3b6f95 !important;
+}
+
+
+body[data-theme="midnight"] .confirm-buttons button{
+
+    background:#0b4f8a !important;
+    color:white !important;
+
+    border:none;
+
+}
+
+
+body[data-theme="midnight"] .confirm-buttons button:hover{
+
+    background:#4da3d9 !important;
+}
+
+
+body[data-theme="midnight"] .confirm-delete{
+
+    background:rgba(0,0,0,.65) !important;
+}
+/* زر العودة للأعلى في الميدنايت */
+body.dark-mode[data-theme="midnight"].dark-mode #backToTop {
+    background-color: #0ea5e9 !important; /* لون لبني فاتح للزر */
+    color: white !important;
+    display: none !important;
+}
+
+/* زر مسح الكل في الميدنايت */
+body.dark-mode[data-theme="midnight"].dark-mode .kemo-fav-div {
+    top: 48px !important; /* تم تنزيله ليكون أسفل زر العودة */
+    background-color: #0284c7 !important; /* لون لبني أغمق قليلاً للتمييز */
+    color: white !important;
+    border: 1px solid #38bdf8;
+}
+
+/* تأثير التفاعل (Hover): جعل اللون أفتح قليلاً عند المرور ليعطي إيحاء بالضغط */
+body.dark-mode[data-theme="purple"] .shop-btn:hover {
+    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%) !important;
+    box-shadow: 0 6px 15px rgba(88, 28, 135, 0.6) !important;
+    border-color: #c084fc !important;
+}
+body.dark-mode[data-theme="midnight"] #emptyFavorites{
+    color: #6FAFD6 !important;
+}
+body.dark-mode[data-theme="midnight"] .lang-container button span{
+    display:inline-block;
+    transform:translate(-8px,-3px);
+}
+body.home-page.dark-mode[data-theme="midnight"] section:last-of-type{
+    margin-bottom: 150 !important;
+    padding-bottom: 130 !important;
+}
+body.WCcategory-page[dir="rtl"] .share-btn{
+    left:10px !important;
+    top: 10px !important;      
+}
+body.home-page[dir="rtl"] .share-btn{
+      /* عدل الرقم كما تريد */
+    left: -230px !important;
+    top: 12px !important;     /* عدل الرقم كما تريد */
+}
+body.category-page[dir="rtl"] .share-btn{
+    left:-10px !important;      /* عدل الرقم */
+    top: 10px !important;       /* عدل الرقم */
+}
+
+/* ==========================================================================
+   PURPLE THEME: DISCOVER BUTTON (MATCHING DEEP DARK MODE)
+   ========================================================================== */
+
+body.dark-mode[data-theme="purple"] #discoverBtn {
+    /* نفس الخلفية المتدرجة للزر السابق */
+    background: linear-gradient(135deg, #2e1065 0%, #581c87 100%) !important;
+    
+    /* نفس لون النص المميز */
+    color: #e9d5ff !important;
+    
+    /* نفس الحدود المتناسقة */
+    border: 2px solid #7e22ce !important;
+    
+    /* نفس الظل */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+    
+    padding: 12px 30px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+/* تأثير التفاعل (Hover) */
+body.dark-mode[data-theme="purple"] #discoverBtn:hover {
+    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%) !important;
+    box-shadow: 0 6px 15px rgba(88, 28, 135, 0.6) !important;
+    border-color: #c084fc !important;
+}
+.favorites-page .custom-view{
+    position: relative;
+}
+
+.favorites-page #viewMenu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    z-index: 9999;
+}
+
+/* عربي */
+html[dir="rtl"] .favorites-page #viewMenu{
+    right: auto;
+    left: 0;
+}
+/* FIX SORT MENU POSITION */
+
+#viewMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    z-index: 9999;
+}
+
+/* لو اللغة العربية */
+body[dir="rtl"] #viewMenu {
+    right: auto;
+    left: 0;
+}
+/* ==========================================================================
+   LEATHER THEME: HERO BUTTON (DEEP DARK MODE)
+   ========================================================================== */
+
+body.dark-mode[data-theme="leather"] .shop-btn {
+    /* تدرج من بني داكن جداً (كاد يكون أسود) إلى بني شوكولاتة دافئ */
+    background: linear-gradient(135deg, #291711 0%, #4a281e 100%) !important;
+    
+    /* لون النص: لون ذهبي مطفي (Soft Gold) ليبرز على الخلفية البنية */
+    color: #f5e1c8 !important;
+    
+    /* الحدود: لون برونزي ليعطي لمعة خفيفة */
+    border: 2px solid #854d3d !important;
+    
+    /* ظل الزر: ليعطي عمقاً طبيعياً */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+    
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* تأثير التفاعل (Hover) */
+body.dark-mode[data-theme="leather"] .shop-btn:hover {
+    background: linear-gradient(135deg, #3d221a 0%, #63392d 100%) !important;
+    box-shadow: 0 6px 15px rgba(133, 77, 61, 0.4) !important;
+    border-color: #d6a086 !important;
+}
+.privacy-hero {
+    margin-bottom: 50px; /* بيعمل مسافة تحت الهيرو وقبل الفوتر */
+}
+.terms-hero {
+    margin-bottom: 40px; /* بتعمل مسافة بين هيرو الشروط والفوتر */
+}
+
+/* ==========================================================================
+   LEATHER THEME: DISCOVER BUTTON (MATCHING DEEP DARK MODE)
+   ========================================================================== */
+
+body.dark-mode[data-theme="leather"] #discoverBtn {
+    /* نفس الخلفية التدرجية للبني الداكن */
+    background: linear-gradient(135deg, #291711 0%, #4a281e 100%) !important;
+    
+    /* نفس لون النص الذهبي الدافئ */
+    color: #f5e1c8 !important;
+    
+    /* نفس الحدود البرونزية */
+    border: 2px solid #854d3d !important;
+    
+    /* نفس الظل لإعطاء العمق */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+    
+    /* تنسيقات إضافية لضمان الشكل */
+    padding: 12px 30px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+/* تأثير التفاعل (Hover) */
+body.dark-mode[data-theme="leather"] #discoverBtn:hover {
+    background: linear-gradient(135deg, #3d221a 0%, #63392d 100%) !important;
+    box-shadow: 0 6px 15px rgba(133, 77, 61, 0.4) !important;
+    border-color: #d6a086 !important;
+}
+.about-boxes{
+    padding-bottom:150px;
+}
+
+.about-page #backToTop{
+    top:260px;         /* المسافة من تحت */
+    right:310px;
+}
+
+/* ==========================================================================
+   STYLE WITH ROUNDED CORNERS (HOME PAGE)
+   ========================================================================== */
+
+/* 1. الأزرار الرئيسية - زوايا دائرية (10px) 
+
+/* 3. تنسيق الألوان (التعديلات الخاصة بالتيمات مع الدوران) */
+
+/* البنفسجي - Dark Mode */
+ body.dark-mode[data-theme="purple"] .shop-btn,
+ body.dark-mode[data-theme="purple"] #discoverBtn {
+    background: linear-gradient(135deg, #2e1065 0%, #581c87 100%) !important;
+    color: #e9d5ff !important;
+    border: 2px solid #7e22ce !important;
+}
+
+/* البني - Dark Mode */
+body.dark-mode[data-theme="leather"] .shop-btn,
+body.dark-mode[data-theme="leather"] #discoverBtn {
+    background: linear-gradient(135deg, #291711 0%, #4a281e 100%) !important;
+    color: #f5e1c8 !important;
+    border: 2px solid #854d3d !important;
+}
+
+/* روابط الفوتر الدارك - ألوان غامقة مع دوران */
+body.dark-mode[data-theme="leather"] footer a {
+    color: #d6a086 !important;
+    border: 1px solid #4a281e !important;
+    background-color: #1a0f0b !important;
+}
+
+body.dark-mode[data-theme="purple"] footer a {
+    color: #c084fc !important;
+    border: 1px solid #3b0764 !important;
+    background-color: #0c0410 !important;
+}
+/* ================= ARABIC RTL FIX ================= */
+/* Remove All Favorites في العربي فقط */
+[dir="rtl"] .kemo-fav-div {
+    right: auto !important;
+    left: -120px !important;
+}
+
+/* ==========================================================================
+   PINK THEME: DARK MODE (BUTTONS & FOOTER)
+   ========================================================================== */
+
+/* 1. زر Discover My Products - تيم الوردي الدارك */
+body.dark-mode[data-theme="pink"] #discoverBtn {
+    /* تدرج من وردي توتي غامق إلى بنفسجي وردي */
+    background: linear-gradient(135deg, #4c0519 0%, #881337 100%) !important;
+    
+    /* لون النص: وردي فاتح جداً (بياض وردي) للتباين */
+    color: #fbcfe8 !important;
+    
+    /* حدود الزر: وردي توتي ليتناغم مع الخلفية */
+    border: 2px solid #be123c !important;
+}
+
+/* 2. روابط الفوتر (Social, Privacy, Terms) - تيم الوردي الدارك */
+body.dark-mode[data-theme="pink"] footer a {
+    /* ألوان غامقة جداً تناسب الفوتر الوردي الدارك */
+    color: #fda4af !important;
+    border: 1px solid #4c0519 !important;
+    background-color: #1a0509 !important; /* لون يقترب من الأسود بمسحة وردية */
+}
+
+/* تأثير الـ Hover للروابط */
+body.dark-mode[data-theme="pink"] footer a:hover {
+    background-color: #4c0519 !important;
+    border-color: #e11d48 !important;
+    color: #ffffff !important;
+}
+/* ==========================================================================
+   PINK THEME: DARK MODE - DEEP DISCOVER BUTTON
+   ========================================================================== */
+
+body.dark-mode[data-theme="pink"] #discoverBtn {
+    /* تدرج غامق جداً يميل للون التوت الداكن (Deep Berry) */
+    background: linear-gradient(135deg, #25020c 0%, #50071e 100%) !important;
+    
+    /* لون الخط فاتح لضمان التباين مع الخلفية الغامقة */
+    color: #fce7f3 !important;
+    
+    /* حدود الزر بلون عنابي غامق */
+    border: 2px solid #881337 !important;
+}
+
+/* تأثير التفاعل (Hover) ليصبح أكثر وضوحاً عند الضغط */
+body.dark-mode[data-theme="pink"] #discoverBtn:hover {
+    background: linear-gradient(135deg, #3d0315 0%, #700a2a 100%) !important;
+    border-color: #e11d48 !important;
+}
+/* ==========================================================================
+   PINK THEME: DARK MODE - DEEP SHOP BUTTON (MATCHING)
+   ========================================================================== */
+
+body.dark-mode[data-theme="pink"] .shop-btn {
+    /* نفس الخلفية الغامقة الفخمة */
+    background: linear-gradient(135deg, #25020c 0%, #50071e 100%) !important;
+    
+    /* نفس لون الخط المتباين */
+    color: #fce7f3 !important;
+    
+    /* نفس لون الحدود */
+    border: 2px solid #881337 !important;
+}
+
+/* تأثير التفاعل (Hover) */
+body.dark-mode[data-theme="pink"] .shop-btn:hover {
+    background: linear-gradient(135deg, #3d0315 0%, #700a2a 100%) !important;
+    border-color: #e11d48 !important;
+}
+/* ==========================================================================
+   BLUE THEME: DEEP DARK MODE (BUTTONS & FOOTER)
+   ========================================================================== */
+
+/* 1. الأزرار (Start Shopping & Discover) - تيم الأزرق */
+body.dark-mode[data-theme="royal"] .shop-btn,
+body.dark-mode[data-theme="royal"] #discoverBtn {
+    /* تدرج من أزرق ليلي عميق جداً إلى أزرق ملكي */
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%) !important;
+    
+    /* لون الخط أزرق فاتح جداً (ثلجي) للتباين */
+    color: #dbeafe !important;
+    
+    /* حدود الزر بلون أزرق معدني */
+    border: 1px solid #3b82f6 !important;
+}
+
+/* 2. روابط الفوتر (Social, Privacy, Terms) - تيم الأزرق */
+body.dark-mode[data-theme="royal"] footer a {
+    /* ألوان غامقة جداً للأزرق */
+    color: #93c5fd !important;
+    border: 1px solid #1e3a8a !important;
+    background-color: #020617 !important; /* أسود بلمحة زرقاء خفيفة */
+}
+
+/* تأثير الـ Hover للأزرار والروابط */
+body.dark-mode[data-theme="royal"] .shop-btn:hover,
+body.dark-mode[data-theme="royal"] #discoverBtn:hover,
+body.dark-mode[data-theme="royal"] footer a:hover {
+    filter: brightness(1.4) !important;
+    border-color: #60a5fa !important;
+}
+html[dir="rtl"] body.dark-mode [data-theme="midnight"] .share-btn {
+    left: 170px !important;
+    top: 155px !important;
+}
+/* ==========================================================================
+   BLUE THEME: FOOTER LINKS (DARK MODE)
+   ========================================================================== */
+
+/* الروابط (Social, Privacy, Terms) - تيم الأزرق الدارك */
+body.dark-mode[data-theme="royal"] footer a {
+    /* ألوان غامقة جداً تتناسب مع التيم */
+    color: #93c5fd !important; /* أزرق فاتح هادئ للنص */
+    border: 1px solid #1e3a8a !important; /* حدود زرقاء داكنة */
+    background-color: #020617 !important; /* خلفية شبه سوداء بلمحة زرقاء */
+    
+    /* الحفاظ على التنسيق والشكل */
+    padding: 12px 25px !important;
+    margin: 6px !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+}
+
+/* تأثير الـ Hover للروابط */
+body.dark-mode[data-theme="royal"] footer a:hover {
+    background-color: #1e3a8a !important; /* لون أزرق أقوى عند المرور */
+    border-color: #60a5fa !important;
+    color: #ffffff !important; /* تحول النص للأبيض عند التفاعل */
+}
+/* ==========================================================================
+   TARGETING: REMOVE ALL FAVORITES INSIDE KEMO FAV DIV
+   ========================================================================== */
+/* التنسيقات الخاصة بكل تيم داخل الـ div */
+body.dark-mode[data-theme="royal"] .kemo-fav-div .remove-fav-btn {
+    background-color: #0f172a !important;
+    color: #cbd5e1 !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode[data-theme="ruby"] .kemo-fav-div .remove-fav-btn {
+    background-color: #2b0505 !important;
+    color: #fca5a5 !important;
+    border-color: #7f1d1d !important;
+}
+
+body.dark-mode[data-theme="midnight"] .kemo-fav-div .remove-fav-btn {
+    background-color: #020617 !important;
+    color: #94a3b8 !important;
+    border-color: #1e293b !important;
+}
+
+body.dark-mode[data-theme="emerald"] .kemo-fav-div .remove-fav-btn {
+    background-color: #022c22 !important;
+    color: #6ee7b7 !important;
+    border-color: #064e3b !important;
+}
+
+body.dark-mode[data-theme="pink"] .kemo-fav-div .remove-fav-btn {
+    background-color: #25020c !important;
+    color: #fbcfe8 !important;
+    border-color: #881337 !important;
+}
+
+body.dark-mode[data-theme="purple"] .kemo-fav-div .remove-fav-btn {
+    background-color: #1e0a3c !important;
+    color: #e9d5ff !important;
+    border-color: #581c87 !important;
+}
+/* ==========================================================================
+   BLUE THEME: SHOPPING BY CATEGORY (DARK MODE)
+   ========================================================================== */
+
+/* الحاوية الأساسية لفئات التسوق */
+body.dark-mode[data-theme="midnight"] .category-card,
+body.dark-mode[data-theme="royal"] .category-card {
+    /* خلفية زرقاء غامقة جداً - شبه سوداء */
+    background: linear-gradient(160deg, #020617 0%, #1e293b 100%) !important;
+    
+    /* حدود خفيفة تعطي فخامة */
+    border: 1px solid #334155 !important;
+    
+    /* لمسة جمالية (دوران الحواف) */
+    border-radius: 12px !important;
+    
+    /* تأثير ظل خفيف جداً لإبراز الكارت */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+    
+    transition: all 0.4s ease !important;
+}
+
+/* عنوان الفئة (مثلاً: Watches, World Cup) */
+body.dark-mode[data-theme="midnight"] .category-card h3,
+body.dark-mode[data-theme="royal"] .category-card h3 {
+    color: #e2e8f0 !important; /* رمادي ثلجي فاتح للقراءة */
+    font-weight: 700 !important;
+}
+
+/* تأثير عند المرور بالماوس (Hover) */
+body.dark-mode[data-theme="midnight"] .category-card:hover,
+body.dark-mode[data-theme="royal"] .category-card:hover {
+    border-color: #3b82f6 !important; /* إطار أزرق يظهر عند التفاعل */
+    background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 100%) !important;
+    transform: translateY(-5px); /* حركة خفيفة */
+}
+/* ==========================================================================
+   SHARE & CATEGORY BUTTONS - DARK MODE (ALL THEMES)
+   ========================================================================== */
+
+/* التنسيق الأساسي (الشكل والحواف) */
+
+/* --- تنسيقات التيمات (الدارك مود) --- */
+
+/* 1. ROYAL */
+body.dark-mode[data-theme="royal"] .share-btn,
+body.dark-mode[data-theme="royal"] .category-label {
+    background-color: #1e293b !important;
+    color: #93c5fd !important;
+    border: 1px solid #334155 !important;
+}
+
+/* 2. RUBY */
+body.dark-mode[data-theme="ruby"] .share-btn,
+body.dark-mode[data-theme="ruby"] .category-label {
+    background-color: #2b0505 !important;
+    color: #fca5a5 !important;
+    border: 1px solid #7f1d1d !important;
+}
+
+/* 3. MIDNIGHT */
+body.dark-mode[data-theme="midnight"] .share-btn,
+body.dark-mode[data-theme="midnight"] .category-label {
+    background-color: #020617 !important;
+    color: #94a3b8 !important;
+    border: 1px solid #1e293b !important;
+}
+
+/* 4. EMERALD */
+body.dark-mode[data-theme="emerald"] .share-btn,
+body.dark-mode[data-theme="emerald"] .category-label {
+    background-color: #022c22 !important;
+    color: #6ee7b7 !important;
+    border: 1px solid #064e3b !important;
+}
+
+/* 5. PINK */
+body.dark-mode[data-theme="pink"] .share-btn,
+body.dark-mode[data-theme="pink"] .category-label {
+    background-color: #25020c !important;
+    color: #fbcfe8 !important;
+    border: 1px solid #881337 !important;
+}
+
+/* 6. PURPLE */
+body.dark-mode[data-theme="purple"] .share-btn,
+body.dark-mode[data-theme="purple"] .category-label {
+    background-color: #1e0a3c !important;
+    color: #e9d5ff !important;
+    border: 1px solid #581c87 !important;
+}
+
+/* تأثير الـ Hover العام لكل التيمات */
+.share-btn:hover, .category-label:hover {
+    filter: brightness(1.4) !important;
+    cursor: pointer !important;
+}
+/* ==========================================================================
+   SHARE BUTTON & CATEGORY H3 - DARK MODE (ALL THEMES)
+   ========================================================================== */
+
+/* 1. التنسيق الأساسي (الخلفية، الحدود، الحواف) 
+/* --- تنسيقات التيمات (الدارك مود) --- */
+
+/* ROYAL */
+body.dark-mode[data-theme="royal"] .share-btn,
+body.dark-mode[data-theme="royal"] .product-card h3 {
+    background-color: #1e293b !important;
+    color: #93c5fd !important;
+    border: 1px solid #334155 !important;
+}
+
+/* RUBY */
+body.dark-mode[data-theme="ruby"] .share-btn,
+body.dark-mode[data-theme="ruby"] .product-card h3 {
+    background-color: #2b0505 !important;
+    color: #fca5a5 !important;
+    border: 1px solid #7f1d1d !important;
+}
+
+/* MIDNIGHT */
+body.dark-mode[data-theme="midnight"] .share-btn,
+body.dark-mode[data-theme="midnight"] .product-card h3 {
+    background-color: #020617 !important;
+    color: #94a3b8 !important;
+    border: 1px solid #1e293b !important;
+}
+
+/* EMERALD */
+body.dark-mode[data-theme="emerald"] .share-btn,
+body.dark-mode[data-theme="emerald"] .product-card h3 {
+    background-color: #022c22 !important;
+    color: #6ee7b7 !important;
+    border: 1px solid #064e3b !important;
+}
+
+/* PINK */
+body.dark-mode[data-theme="pink"] .share-btn,
+body.dark-mode[data-theme="pink"] .product-card h3 {
+    background-color: #25020c !important;
+    color: #fbcfe8 !important;
+    border: 1px solid #881337 !important;
+}
+
+/* PURPLE */
+body.dark-mode[data-theme="purple"] .share-btn,
+body.dark-mode[data-theme="purple"] .product-card h3 {
+    background-color: #1e0a3c !important;
+    color: #e9d5ff !important;
+    border: 1px solid #581c87 !important;ĺl
+}
+
+/* تأثير الـ Hover */
+/* ==========================================================================
+   تنسيق إطار البحث (Search Border) - ألوان احترافية لكل تيم
+   ========================================================================== */
+
+/* 1. التيم الملكي (Royal) - أزرق ياقوتي عميق */
+body.dark-mode[data-theme="royal"] input[type="search"],
+body.dark-mode[data-theme="royal"] input[type="text"] {
+    border: 2px solid #1e40af !important;
+}
+
+/* 2. التيم الياقوتي (Ruby) - أحمر بورغندي داكن */
+body.dark-mode[data-theme="ruby"] input[type="search"],
+body.dark-mode[data-theme="ruby"] input[type="text"] {
+    border: 2px solid #881337 !important;
+}
+
+/* 3. التيم الليلي (Midnight) - أزرق رمادي معدني */
+body.dark-mode[data-theme="midnight"] input[type="search"],
+body.dark-mode[data-theme="midnight"] input[type="text"] {
+    border: 2px solid #334155 !important;
+}
+
+/* 4. التيم الزمردي (Emerald) - أخضر غابة عميق */
+body.dark-mode[data-theme="emerald"] input[type="search"],
+body.dark-mode[data-theme="emerald"] input[type="text"] {
+    border: 2px solid #065f46 !important;
+}
+
+/* ==========================================================================
+   PINK THEME: DARK MODE (Vibrant Pink & Deep Background)
+   ========================================================================== */
+
+/* 1. إطار البحث: وردي فاقع وواضح ليبرز فوق الخلفية الغامقة */
+body.dark-mode[data-theme="pink"] input[type="search"],
+body.dark-mode[data-theme="pink"] input[type="text"] {
+    /* وردي أكثر وضوحاً وحيوية */
+    border: 2.5px solid #ec4899 !important; 
+    
+    /* خلفية وردية غامقة جداً (بني وردي) لتعطي العمق المطلوب */
+    background-color: #1c050f !important; 
+    
+    /* نص فاتح جداً للتباين */
+    color: #fce7f3 !important; 
+    
+    /* زيادة سماكة الإطار قليلاً ليظهر بوضوح */
+    box-shadow: 0 0 8px rgba(236, 72, 153, 0.2) !important;
+}
+
+/* 2. تحسين تأثير الـ Hover */
+body.dark-mode[data-theme="pink"] input[type="search"]:focus,
+body.dark-mode[data-theme="pink"] input[type="text"]:focus {
+    border-color: #f472b6 !important; /* لون أفتح عند التركيز */
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.4) !important;
+}
+
+
+/* 6. التيم البنفسجي (Purple) - بنفسجي ملكي غامق */
+body.dark-mode[data-theme="purple"] input[type="search"],
+body.dark-mode[data-theme="purple"] input[type="text"] {
+    border: 2px solid #581c87 !important;
+}
+
+/* إعدادات الخلفية الموحدة لكل تيمات الدارك مود */
+body.dark-mode input[type="search"],
+body.dark-mode input[type="text"] {
+    background-color: #020617 !important; /* لون أسود ليلي فخم */
+    color: #f8fafc !important; /* نص أبيض ثلجي مريح للعين */
+    transition: all 0.3s ease !important;
+}
+
+/* إضافة تأثير بسيط عند الضغط (Focus) لزيادة الفخامة */
+body.dark-mode input[type="search"]:focus,
+body.dark-mode input[type="text"]:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1) !important;
+}
+/* ==========================================================================
+   KEMO STORE LOGO - MIDNIGHT THEME (WINE RED COLOR)
+   ========================================================================== */
+
+/* استهداف شعار المتجر في التيم الليلي فقط */
+body.dark-mode[data-theme="midnight"] .header .logo, 
+body.dark-mode[data-theme="midnight"] .logo {
+    /* درجة نبيتي غامقة وفخمة */
+    color: #881337 !important; 
+    
+    /* إضافة لمسة توهج خفيفة تناسب الدارك مود */
+    text-shadow: 0 0 10px rgba(136, 19, 55, 0.5) !important;
+    
+    /* زيادة سماكة الخط ليبرز اللون */
+    font-weight: 800 !important;
+    
+    transition: color 0.3s ease !important;
+}
+
+/* اختيارياً: تأثير عند المرور بالماوس */
+body.dark-mode[data-theme="midnight"] .header .logo:hover {
+    color: #be123c !important; /* درجة نبيتي أفتح قليلاً عند الـ Hover */
+}
+/* ==========================================================================
+   PRODUCT DESCRIPTION (P) - MIDNIGHT THEME (BLUE ACCENT)
+   ========================================================================== */
+
+/* استهداف وصف المنتج في التيم الليلي (Midnight) */
+body.dark-mode[data-theme="midnight"] .product-card p,
+body.dark-mode[data-theme="midnight"] .item-card p,
+body.dark-mode[data-theme="midnight"] .product-description p {
+    /* لون لبني سماوي يظهر بوضوح وفخامة فوق الأسود */
+    color: #60a5fa !important; 
+    
+    /* جعل الخط مريحاً للقراءة */
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    
+    /* تأثير طفيف لتوهج الخط (اختياري) */
+    text-shadow: 0 0 5px rgba(96, 165, 250, 0.3) !important;
+    
+    transition: color 0.3s ease !important;
+}
+
+/* تأثير عند المرور بالماوس */
+body.dark-mode[data-theme="midnight"] .product-card:hover p {
+    color: #93c5fd !important; /* لون أفتح قليلاً عند الـ Hover */
+}
+/* ==========================================================================
+   THEME-BASED DARK MODE COLORS (Unified System - Including Leather)
+   ========================================================================== */
+
+/* تعريف ألوان كل تيم في وضع الدارك مود */
+body.dark-mode[data-theme="leather"]  { --theme-accent: #B8863B; --bg-dark: #1a120b; }
+body.dark-mode[data-theme="royal"]    { --theme-accent: #3b82f6; --bg-dark: #0f172a; }
+body.dark-mode[data-theme="ruby"]     { --theme-accent: #e11d48; --bg-dark: #1f0505; }
+body.dark-mode[data-theme="midnight"] { --theme-accent: #60a5fa; --bg-dark: #020617; }
+body.dark-mode[data-theme="emerald"]  { --theme-accent: #10b981; --bg-dark: #020f0a; }
+body.dark-mode[data-theme="pink"]     { --theme-accent: #ec4899; --bg-dark: #1c050f; }
+body.dark-mode[data-theme="purple"]   { --theme-accent: #9333ea; --bg-dark: #0f051c; }
+
+/* 2. تطبيق الألوان ديناميكياً على العناصر */
+body.dark-mode input[type="search"],
+body.dark-mode input[type="text"],
+body.dark-mode .product-category {
+    /* زيادة السماكة لـ 3px لضمان وضوح البوردر في التيمات الغامقة */
+    border: 3px solid var(--theme-accent) !important;
+    background-color: var(--bg-dark) !important;
+    color: #f8fafc !important;
+    transition: all 0.3s ease !important;
+}
+
+/* 3. تنسيق خاص للـ logo في التيم الليلي */
+body.dark-mode[data-theme="midnight"] .logo,
+body.dark-mode[data-theme="midnight"] .site-title {
+    color: #881337 !important; /* لون نبيتي فخم */
+}
+/* ==========================================================================
+   BUTTONS STYLING: ADD TO FAVORITE & PRESS TO PURCHASE
+   ========================================================================== */
+
+/* 1. زر الإضافة للمفضلة (حالة عادية + عند التحول لـ Added) */
+body.dark-mode .add-to-favorite {
+    background: transparent !important;
+    border: 2px solid var(--theme-accent) !important;
+    color: var(--theme-accent) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* عندما يصبح مضافاً (Added) */
+body.dark-mode .add-to-favorite.added {
+    background: var(--theme-accent) !important;
+    color: #ffffff !important;
+}
+body.dark-mode[data-theme="midnight"] #backToTop{
+    left:60px !important;
+}
+/* تأثير الـ Hover للمفضلة */
+body.dark-mode .add-to-favorite:hover {
+    background: var(--theme-accent) !important;
+    color: #ffffff !important;
+    transform: scale(1.05) !important;
+}
+
+/* 2. زر الشراء (Press to Purchase) - زر قوي وبارز */
+body.dark-mode .press-to-purchase {
+    background: var(--theme-accent) !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+
+/* تأثير الـ Hover للشراء (يتوهج قليلاً) */
+body.dark-mode .press-to-purchase:hover {
+    filter: brightness(1.2) !important;
+    box-shadow: 0 0 15px var(--theme-accent) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 3. تنسيق عام للأزرار */
+body.dark-mode .add-to-favorite,
+body.dark-mode .press-to-purchase {
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+/* ==========================================================================
+   MIDNIGHT THEME: SPECIFIC COLOR TUNING
+   ========================================================================== */
+
+/* 1. كلمة "Search" داخل خانة البحث في التيم الليلي */
+body.dark-mode[data-theme="midnight"] input[type="search"]::placeholder,
+body.dark-mode[data-theme="midnight"] input[type="text"]::placeholder {
+    /* لون أزرق رمادي هادئ يسهل قراءته فوق الخلفية الداكنة */
+    color: #64748b !important; 
+    opacity: 1 !important;
+}
+
+/* 2. نص خانة البحث نفسه أثناء الكتابة */
+body.dark-mode[data-theme="midnight"] input[type="search"],
+body.dark-mode[data-theme="midnight"] input[type="text"] {
+    color: #e2e8f0 !important; /* أبيض ثلجي مريح للعين */
+}
+
+/* 3. كلمة "Kemo Store" في الهيدر (التيم الليلي) */
+body.dark-mode[data-theme="midnight"] .logo,
+body.dark-mode[data-theme="midnight"] .site-title {
+    /* لون نبيتي عميق وفخم يتناسب مع الأزرق الليلي */
+    color: #be123c !important; 
+    
+    /* إضافة لمسة فخامة (نص بارز قليلاً) */
+    text-shadow: 0 0 8px rgba(190, 18, 60, 0.3) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* تأثير الـ Hover على اسم الموقع في الهيدر */
+body.dark-mode[data-theme="midnight"] .logo:hover,
+body.dark-mode[data-theme="midnight"] .site-title:hover {
+    color: #f43f5e !important; /* لون أفتح قليلاً عند التمرير */
+    cursor: pointer;
+}
+/* ==========================================================================
+   FAVORITE HINT COLOR SYSTEM (Dark Mode Only)
+   ========================================================================== */
+
+
+/* التأثير عند المرور بالماوس (Hover) */
+body.dark-mode .favorite-hint:hover,
+body.dark-mode .fav-hint:hover {
+    filter: brightness(1.3) !important;
+    cursor: help !important;
+}
+/* ==========================================================================
+   DEEP DARK THEME - DARK MODE (Ultra-Dark Customization)
+   ========================================================================== */
+
+/* 1. التيم الأحمر (Ruby) - خلفية داكنة ونصوص متناغمة */
+body.dark-mode[data-theme="ruby"] {
+    background-color: #080202 !important; 
+    color: #d1a3a3 !important; /* لون نص أحمر مطفأ */
+}
+
+body.dark-mode[data-theme="ruby"] .product,
+body.dark-mode[data-theme="ruby"] .cat,
+body.dark-mode[data-theme="ruby"] footer {
+    background-color: #0f0303 !important;
+}
+
+/* 2. التيم الأخضر (Emerald) - خلفية داكنة ونصوص متناغمة */
+body.dark-mode[data-theme="emerald"] {
+    background-color: #020805 !important;
+    color: #a3d1b7 !important; /* لون نص أخضر مطفأ */
+}
+
+body.dark-mode[data-theme="emerald"] .product,
+body.dark-mode[data-theme="emerald"] .cat,
+body.dark-mode[data-theme="emerald"] footer {
+    background-color: #030f0a !important;
+}
+
+/* 3. توحيد ألوان العناوين والروابط لتكون جزءاً من التيم */
+body.dark-mode[data-theme="ruby"] h1, 
+body.dark-mode[data-theme="ruby"] h2,
+body.dark-mode[data-theme="ruby"] a {
+    color: #e5b0b0 !important;
+}
+
+body.dark-mode[data-theme="emerald"] h1, 
+body.dark-mode[data-theme="emerald"] h2,
+body.dark-mode[data-theme="emerald"] a {
+    color: #b0e5c8 !important;
+}
+
+/* 4. إزالة التباين الحاد في الأزرار 
+/* ==========================================================================
+   KEMO STORE: THEME SYSTEM (RUBY, ROYAL, LEATHER, EMERALD, PINK, PURPLE)
+   ========================================================================== */
+
+/* إعدادات Navigation الأساسية */
+
+/* --- 1. RUBY (الأحمر) --- */
+body:not(.dark-mode)[data-theme="ruby"] #products-nav a { background: #ffe4e6; color: #9f1239; }
+body.dark-mode[data-theme="ruby"] { background-color: #080202; color: #d1a3a3; }
+body.dark-mode[data-theme="ruby"] #products-nav a { background: #2b0505; color: #fca5a5; }
+
+/* --- 2. ROYAL (الأزرق الملكي) --- */
+body:not(.dark-mode)[data-theme="royal"] #products-nav a { background: #dbeafe; color: #1e40af; }
+body.dark-mode[data-theme="royal"] { background-color: #02050a; color: #a3b3d1; }
+body.dark-mode[data-theme="royal"] #products-nav a { background: #05102b; color: #a5c0fc; }
+
+/* --- 3. LEATHER (الجلدي) --- */
+body:not(.dark-mode)[data-theme="leather"] #products-nav a { background: #fef3c7; color: #92400e; }
+body.dark-mode[data-theme="leather"] { background-color: #080602; color: #d1bfa3; }
+body.dark-mode[data-theme="leather"] #products-nav a { background: #2b1f05; color: #fccba5; }
+
+/* --- 4. EMERALD (الزمردي) --- */
+body:not(.dark-mode)[data-theme="emerald"] #products-nav a { background: #d1fae5; color: #065f46; }
+body.dark-mode[data-theme="emerald"] { background-color: #020805; color: #a3d1b7; }
+body.dark-mode[data-theme="emerald"] #products-nav a { background: #051a14; color: #a7f3d0; }
+
+/* --- 5. PINK (الوردي) --- */
+body:not(.dark-mode)[data-theme="pink"] #products-nav a { background: #fce7f3; color: #9d174d; }
+body.dark-mode[data-theme="pink"] { background-color: #080206; color: #d1a3b7; }
+body.dark-mode[data-theme="pink"] #products-nav a { background: #2b0515; color: #fca5c9; }
+
+/* --- 6. PURPLE (البنفسجي) --- */
+body:not(.dark-mode)[data-theme="purple"] #products-nav a { background: #ede9fe; color: #5b21b6; }
+body.dark-mode[data-theme="purple"] { background-color: #050208; color: #b7a3d1; }
+body.dark-mode[data-theme="purple"] #products-nav a { background: #15052b; color: #c9a5fc; }
+
+/* ================= LANGUAGE BUTTONS ================= */
+/* الحاوية التي تجمع الأزرار */
+.lang-container {
+    position: absolute; /* لتثبيتهم في مكان معين مهما نزل الزائر بالصفحة */
+    top: -35px;       /* المسافة من أعلى الشاشة (تحكم بها لرفعها أو خفضها) */
+    right: 40px;     /* المسافة من جهة اليمين */
+    z-index: 1000;   /* لضمان ظهورهم فوق أي عنصر آخر */
+    display: flex;
+    gap: 12px;        /* مسافة صغيرة بين الأزرار */
+}
+
+/* تنسيق الأزرار */
+.lang-container button {
+    background: var(--card); /* لون الخلفية من ثيم الموقع */
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px; /* حجم الإيموجي */
+}
+
+/* تأثير عند المرور بالماوس */
+.lang-container button:hover {
+    background: var(--primary);
+    color: white;
+}
+/* تصغير أزرار اللغة وجعلها موحدة في كل التيمات */
+.lang-container button {
+    padding: 1px 4px !important;  /* تقليل المساحة الداخلية */
+    font-size: 18px !important;   /* تصغير حجم الإيموجي/الخط */
+    min-width: 10px !important;   /* عرض أصغر للأزرار */
+    height: 30px !important;      /* ارتفاع أصغر *//* تقليل دوران الحواف لتناسب الحجم الصغير */
+    gap: 13px !important;
+}
+
+/* تنسيق إضافي لضمان عدم تغير الحجم عند التبديل بين التيمات 
+/* ==========================================================================
+   TERMS OF USE PAGE: MIDNIGHT BRIGHT LIGHT-LOOK INSIDE DARK MODE
+   ========================================================================== */
+
+
+/* --- تصفير هوامش قسم الشروط لمنع الفراغات والالتحام المباشر --- */
+body.dark-mode[data-theme="midnight"] .about-section,
+body.dark-mode[data-theme="midnight"] .about-box {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+body.dark-mode[data-theme="midnight"] .category-header p {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #0ea5e9 !important; /* سماوي واضح ومضيء */
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+
+/* --- قسم حاوية الشروط (About Section) --- */
+body.dark-mode[data-theme="midnight"] .about-section {
+    max-width: 850px !important;
+    margin: 50px auto !important; /* توسيط البوكس في منتصف الصفحة بأناقة */
+    padding: 0 20px !important;
+}
+
+/* صندوق الشروط (About Box) الفاتح */
+body.dark-mode[data-theme="midnight"] .about-box { 
+    border: 1px solid #e2e8f0 !important;
+    border-top: 3px solid #0ea5e9 !important; /* شريط علوي سماوي مميز */
+    border-radius: 8px !important;
+    padding: 8px 10px !important;
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.04) !important;
+}
+
+/* --- ضبط ألوان كلام الشروط لتكون واضحة وحادة جداً (تعديل الألوان المطلوب) --- */
+
+/* عناوين الشروط (H2) - درجة واضحة وقوية جداً */
+body.dark-mode[data-theme="midnight"] .about-box h2 {
+    font-family: 'Cinzel', serif !important;
+    color: #0f172a !important; /* كحلي داكن صريح، مقروء بنسبة 100% على الخلفية الفاتحة */
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-top: 25px !important; /* مسافة قبل كل عنوان جديد */
+    margin-bottom: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+/* لتجنب المسافة الكبيرة قبل أول عنوان في البوكس */
+body.dark-mode[data-theme="midnight"] .about-box h2:first-of-type {
+    margin-top: 0 !important;
+}
+
+/* نصوص الشروط (P) - درجة رمادية داكنة صريحة ومركزة */
+body.dark-mode[data-theme="midnight"] .about-box p {
+    font-family: 'Cairo', sans-serif !important;
+    color: #334155 !important; /* درجة Slate داكنة تمنع بهتان الكلام تماماً وتوفر أقصى درجات الوضوح */
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 20px !important;
+}
+
+/* --- الفوتر (Footer) المتناسق مع المظهر الفاتح --- */
+body.dark-mode[data-theme="midnight"] footer#contact {
+    background-color: #ffffff !important;
+    border-top: 1px solid #e2e8f0 !important;
+    padding: 40px 20px !important;
+    margin-top: 6px !important;
+}
+body.dark-mode[data-theme="midnight"] footer#contact h2 { color: #0f172a !important; }
+body.dark-mode[data-theme="midnight"] footer#contact p { color: #64748b !important; }
+body.dark-mode[data-theme="midnight"] footer#contact .social a { color: #0ea5e9 !important; }
+/* ==========================================================================
+   TERMS & ABOUT PAGES: PREMIUM ICY-BLUE FOOTER (MIDNIGHT DARK MODE)
+   ========================================================================== 
+
+
+/* عنوان الفوتر (Contact Me / Kemo Store) - كحلي غامق وواضح جداً */
+body.dark-mode[data-theme="midnight"] footer#contact h2 { 
+    font-family: 'Cinzel', serif !important;
+    color: #0369a1 !important; /* درجة أزرق سماوي عميق ومميز */
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+}
+
+/* نصوص الفوتر الفرعية والـ Taglines - أزرق نيلي واضح يمنع البهتان ,*/
+
+body.dark-mode[data-theme="midnight"] footer#contact .contact-text,
+body.dark-mode[data-theme="midnight"] footer#contact .footer-tagline,
+body.dark-mode[data-theme="midnight"] footer#contact .footer-kemo { 
+    color: #0c4a6e !important; /* كحلي غامق واضح جداً فوق الخلفية اللبني */
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+}
+
+/* نص الحقوق المحفوظة (Copyright) أسفل الفوتر */
+body.dark-mode[data-theme="midnight"] footer#contact .copyright {
+    color: #0284c7 !important; /* درجة لبني داكنة ومميزة */
+    font-size: 13px !important;
+    margin-top: 25px !important;
+}
+
+/* أزرار التنقل والروابط الاجتماعية (Social Links) */
+body.dark-mode[data-theme="midnight"] footer#contact .social {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+}
+
+body.dark-mode[data-theme="midnight"] footer#contact .social a { 
+    font-family: 'Cairo', sans-serif !important;
+    color: #ffffff !important; /* نص أبيض داخل الزر */
+    background-color: #0ea5e9 !important; /* زر لبني/سماوي حيوي ومشرق */
+    padding: 8px 18px !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 10px rgba(14, 165, 233, 0.15) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ==========================================================================
+   404 ERROR PAGE: MIDNIGHT BRIGHT LIGHT-LOOK (DARK MODE)
+   ========================================================================== */
+
+/* الخلفية الأساسية لصفحة الخطأ (ثلجية بيضاء ناصعة ومشرقة) */
+body.dark-mode[data-theme="midnight"].error-page .error404,
+body.dark-mode[data-theme="midnight"] .error404 {
+    background: #bae6fd !important;
+    background-color: #bae6fd !important;
+}
+
+/* تصفير الهوامش لمنع أي فراغات عشوائية */
+/* --- 1. الهيدر (Error Header) متطابق مع بقية الصفحات الفاتحة ---
+/* اسم المتجر في الهيدر */
+body.dark-mode[data-theme="midnight"] .error-header h1 {
+    font-family: 'Cinzel', serif !important;
+    color: #0369a1 !important; /* أزرق سماوي عميق */
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+}
+
+/* النص الفرعي للهيدر */
+
+/* --- 2. قسم المحتوى لحاوية الـ 404 (Section Error404) --- */
+body.dark-mode[data-theme="midnight"] .error404 {
+    max-width: 700px !important;
+    margin: 60px auto !important; /* توسيط أنيق في منتصف الصفحة */
+    padding: 0 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+}
+
+/* صناديق الخطأ (Error Boxes) الفاتحة والنظيفة */
+body.dark-mode[data-theme="midnight"] .error-box {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 35px 25px !important;
+    text-align: center !important;
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.03) !important;
+}
+
+/* تمييز الصندوق العلوي بشريط جانبي لبني ناصع */
+body.dark-mode[data-theme="midnight"] .error-box.top-box {
+    border-left: 5px solid #0ea5e9 !important;
+}
+
+/* رقم الخطأ الكبير 404 */
+body.dark-mode[data-theme="midnight"] .error-box h1 {
+    font-family: 'Bodoni Moda', serif !important;
+    color: #0ea5e9 !important; /* لبني ناصع ومضيء */
+    font-size: 80px !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+    margin-bottom: 10px !important;
+}
+
+/* نص Page Not Found */
+body.dark-mode[data-theme="midnight"] .error-box h2 {
+    font-family: 'Cinzel', serif !important;
+    color: #0f172a !important; /* كحلي داكن صريح حاد الوضوح */
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+/* نص وصف الخطأ */
+body.dark-mode[data-theme="midnight"] .error-box p {
+    font-family: 'Cairo', sans-serif !important;
+    color: #334155 !important; /* رمادي داكن مركز وسهل القراءة */
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 25px !important;
+}
+
+/* زر العودة للرئيسية (Home Button) */
+body.dark-mode[data-theme="midnight"] .error-box .home-btn {
+    display: inline-block !important;
+    font-family: 'Cairo', sans-serif !important;
+    color: #ffffff !important;
+    background-color: #0ea5e9 !important; /* لبني ناصع متناسق */
+    padding: 12px 35px !important;
+    border-radius: 30px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* تأثير التحويم على زر العودة */
+body.dark-mode[data-theme="midnight"] .error-box .home-btn:hover {
+    background-color: #0369a1 !important; /* كحلي أعمق */
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 20px rgba(3, 105, 161, 0.4) !important;
+}
+
+/* --- 3. الفوتر اللبني الناصع والمشرق (مطابق لصفحة الـ Privacy تماماً) --- */
+body.dark-mode[data-theme="midnight"].error-page footer#contact,
+body.dark-mode[data-theme="midnight"] .error-page footer#contact {
+    background: #0ea5e9 !important; 
+    background-color: #0ea5e9 !important; 
+    border-top: 1px solid #38bdf8 !important; 
+    padding: 50px 20px !important;
+    margin-top: 60px !important;
+    text-align: center !important;
+}
+
+/* ألوان نصوص الفوتر */
+body.dark-mode[data-theme="midnight"].error-page footer#contact h2 { 
+    color: #ffffff !important; 
+    font-family: 'Cinzel', serif !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.dark-mode[data-theme="midnight"].error-page footer#contact p,
+body.dark-mode[data-theme="midnight"].error-page footer#contact .footer-tagline,
+body.dark-mode[data-theme="midnight"].error-page footer#contact .footer-kemo { 
+    color: #f0f9ff !important; 
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+    font-weight: 600 !important;
+}
+
+body.dark-mode[data-theme="midnight"].error-page footer#contact .copyright {
+    color: #e0f2fe !important; 
+    font-size: 13px !important;
+    margin-top: 25px !important;
+    font-weight: 500 !important;
+}
+
+/* أزرار التنقل داخل الفوتر الناصع */
+body.dark-mode[data-theme="midnight"].error-page footer#contact .social a { 
+    color: #0ea5e9 !important; 
+    background-color: #ffffff !important; 
+    font-family: 'Cairo', sans-serif !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+body.dark-mode[data-theme="midnight"].error-page footer#contact .social a:hover { 
+    background-color: #0c4a6e !important; 
+    color: #ffffff !important; 
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 15px rgba(12, 74, 110, 0.4) !important;
+}
+
+/* تأثير تمرير الماوس فوق أزرار الفوتر اللبني */
+body.dark-mode[data-theme="midnight"] footer#contact .social a:hover { 
+    background-color: #0369a1 !important; /* يتحول لأزرق أعمق عند التحويم */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(3, 105, 161, 0.25) !important;
+}
+body.dark-mode[data-theme="midnight"] footer#contact {
+    background-color: #bae6fd !important; /* لبني غني وواضح */
+    border-top: 1px solid #7dd3fc !important; 
+    padding: 50px 20px !important;
+}
+/* ==========================================================================
+   FORCE BRIGHT & VIBRANT SKY BLUE FOOTER (MIDNIGHT DARK MODE)
+   ========================================================================== */
+
+/* استهداف قوي جداً لإجبار اللون اللبني الناصع والمشرق على التغيير فوراً */
+body.dark-mode[data-theme="midnight"].category-page footer#contact,
+body.dark-mode[data-theme="midnight"] footer#contact,
+body.dark-mode[data-theme="midnight"] .category-page footer {
+    /* درجة لبني ناصعة ومشرقة جداً ومليئة بالحيوية */
+    background: #0ea5e9 !important; 
+    background-color: #0ea5e9 !important; 
+    
+    /* خط علوي أزرق سماوي مضيء */
+    border-top: 1px solid #38bdf8 !important; 
+    padding: 50px 20px !important;
+    margin-top: 60px !important;
+    text-align: center !important;
+}
+body.favorites-page .kemo-fav-div{
+    position: relative  !important;
+    top: -70px !important;   /* المسافة من أسفل */
+        /* المسافة من اليمين */
+    left: 90px !important;
+    z-index: 99999 !important;
+}
+
+/* --- تنسيق ألوان الكلام لتكون واضحة وحادة فوق اللبني الناصع --- */
+
+/* عنوان الفوتر (Kemo Store) - أبيض ناصع صريح وفخم */
+body.dark-mode[data-theme="midnight"].category-page footer#contact h2 { 
+    color: #ffffff !important; 
+    font-family: 'Cinzel', serif !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* ظل خفيف جداً لزيادة بروز النص */
+}
+
+/* نصوص الفوتر والـ Taglines - أبيض ثلجي ناعم مريح جداً للقراءة */
+body.dark-mode[data-theme="midnight"].category-page footer#contact p,
+body.dark-mode[data-theme="midnight"].category-page footer#contact .footer-tagline,
+body.dark-mode[data-theme="midnight"].category-page footer#contact .footer-kemo,
+body.dark-mode[data-theme="midnight"].category-page footer#contact .contact-text { 
+    color: #f0f9ff !important; /* أبيض نقي مائل للزرقة الخفيفة جداً لمنع زغللة العين */
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+    font-weight: 600 !important;
+}
+
+/* نص الحقوق المحفوظة (Copyright) أسفل الفوتر */
+body.dark-mode[data-theme="midnight"].category-page footer#contact .copyright {
+    color: #e0f2fe !important; /* لبني فاتح جداً ومميز */
+    font-size: 13px !important;
+    margin-top: 25px !important;
+    font-weight: 500 !important;
+}
+
+/* أزرار الروابط الاجتماعية والتنقل (Social Links) */
+body.dark-mode[data-theme="midnight"].category-page footer#contact .social a { 
+    color: #0ea5e9 !important; /* نص بلون الفوتر اللبني بداخل الزر ليعطي طابعاً احترافياً */
+    background-color: #ffffff !important; /* أزرار بيضاء ناصعة تبرز بقوة وتجذب العين */
+    font-family: 'Cairo', sans-serif !important;
+    padding: 8px 20px !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* تأثير تمرير الماوس (Hover) فوق أزرار الفوتر البيضاء */
+body.dark-mode[data-theme="midnight"].category-page footer#contact .social a:hover { 
+    background-color: #0c4a6e !important; /* يتحول لكحلي غامق فخم عند التحويم */
+    color: #ffffff !important; /* يتحول النص للأبيض */
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 15px rgba(12, 74, 110, 0.4) !important;
+}
+
+/* =========================
+   ABOUT PAGE - MIDNIGHT THEME
+========================= */
+
+
+/* Page Background */
+
+body.dark-mode[data-theme="midnight"] .about-hero,
+body.dark-mode[data-theme="midnight"] .about-main,
+body.dark-mode[data-theme="midnight"] .about-boxes,
+body.dark-mode[data-theme="midnight"] .about-contact{
+    background:#eef8ff;
+}
+
+
+/* Hero */
+
+body.dark-mode[data-theme="midnight"] .about-hero{
+    background:linear-gradient(135deg,#d8f3ff,#bde7ff);
+}
+
+body.dark-mode[data-theme="midnight"] .about-hero h1{
+    color:#073b66;
+}
+
+body.dark-mode[data-theme="midnight"] .about-hero p{
+    color:#356b8a;
+}
+
+
+
+/* Story */
+
+body.dark-mode[data-theme="midnight"] .about-main{
+    background:#dff4ff;
+}
+
+body.dark-mode[data-theme="midnight"] .about-main h2{
+    color:#075985;
+}
+
+body.dark-mode[data-theme="midnight"] .about-main p{
+    color:#315b75;
+}
+
+
+
+/* Cards */
+
+body.dark-mode[data-theme="midnight"] .about-boxes{
+    background:#eef8ff;
+}
+
+
+body.dark-mode[data-theme="midnight"] .about-card{
+    background:#ffffff;
+    border:1px solid #b9ddf5;
+    box-shadow:0 10px 30px rgba(3,105,161,.12);
+}
+
+
+body.dark-mode[data-theme="midnight"] .about-card h3{
+    color:#0284c7;
+}
+
+
+body.dark-mode[data-theme="midnight"] .about-card p{
+    color:#52758c;
+}
+
+
+body.dark-mode[data-theme="midnight"] .about-card:hover{
+    background:#e0f2fe;
+}
+
+
+
+/* Footer */
+
+body.dark-mode[data-theme="midnight"] footer{
+    background:#0b2942;
+}
+
+
+body.dark-mode[data-theme="midnight"] footer h2{
+    color:#ffffff;
+}
+
+
+body.dark-mode[data-theme="midnight"] .contact-text{
+    color:#e6f6ff;
+}
+
+
+body.dark-mode[data-theme="midnight"] .copyright{
+    color:#b9dcf5;
+}
+
+/* صفحة المفضلة - وضع الميدنايت */
+body[data-theme="midnight"].dark-mode.favorites-page #backToTop {
+    top: 127px !important;   /* رفع الزر ليكون فوق زر "حذف الكل" */
+    left: 79px !important;
+    background-color: #0ea5e9 !important; /* لون لبني داكن للتميز */
+    color: white !important;
+    width: 45px;
+    height: 45px;
+}
+
+/* صفحة About - وضع الميدنايت */
+body[data-theme="midnight"].dark-mode.about-page #backToTop {
+    top:80px !important;    /* المسافة من الأسفل */
+    left:-25px !important;     /* المسافة من اليمين */
+    background-color: #38bdf8 !important; /* لون لبني للميدنايت */
+    color: #0f172a !important;   /* لون النص */
+    border: none !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+.kemo-tagline{
+    position: relative;
+    top: -10px;
+}
+/* Back To Top */
+
+body.dark-mode[data-theme="midnight"] #backToTop{
+    background:#0284c7;
+    color:#ffffff;
+}
+/* ضبط حاوية الكروت لتكون متجاوبة */
+.about-boxes {
+    display: flex;
+    flex-wrap: wrap; /* هذا هو الحل للمشكلة: السماح للكروت بالنزول للسطر التالي */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* MIDNIGHT DARK MODE - BACK TO TOP CONTROL */
+
+body.dark-mode[data-theme="midnight"] #backToTop,
+body[data-theme="midnight"] #backToTop 
+.about-card {
+    flex: 1 1 300px; /* الكرت سيأخذ مساحة مرنة (بحد أدنى 300px) */
+    max-width: 350px; /* يمنع الكرت من التمدد بشكل مبالغ فيه */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+body.dark-mode[data-theme="midnight"] #backToTop:hover{
+    background:#0369a1;
+    
+}
+body.dark-mode[data-theme="midnight"] footer h2{
+    color:#ffffff !important;
+}
+
+body.dark-mode[data-theme="midnight"] footer .contact-text{
+    color:#e8f7ff !important;
+}
+/* ==========================================================================
+   MIDNIGHT THEME: DARK MODE FOOTER TITLE
+   ========================================================================== */
+
+body.dark-mode[data-theme="midnight"] footer h2,
+body.dark-mode[data-theme="midnight"] footer [data-lang="kemo"] {
+    color: #ffffff !important; /* أبيض ناصع */
+    text-shadow: 0 2px 8px rgba(255,255,255,0.2) !important;
+}
+body.dark-mode[data-theme="midnight"] footer .copyright{
+    color:#c9e9ff !important;
+}
+/* =====================================================
+   DARK MODE FOOTER BUTTONS FIX
+   ONLY LEATHER + MIDNIGHT
+   ===================================================== */
+
+
+/* LEATHER DARK */
+body.dark-mode[data-theme="leather"] footer a {
+    background: #2b1810 !important;
+    color: #e7c9a9 !important;
+    border: 1px solid #6b3f28 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,.4) !important;
+}
+
+/* hover */
+body.dark-mode[data-theme="leather"] footer a:hover {
+    background: #4a281e !important;
+    color: #fff !important:
+}
+body[dir="rtl"].favorites-page .kemo-fav-div{
+    position: relative !important;
+    transform: translateX(-0px) !important;
+}
+/* LTR يفضل كما هو */
+html[dir="ltr"] body.favorites-page .kemo-fav-div{
+    left: 8px !important;
+    right: 20px !important;
+}
+/* =====================================================
+   FOOTER BUTTONS - LEATHER & MIDNIGHT DARK MODE
+   ===================================================== */
+
+/* LEATHER - بني داكن فاخر */
+body.dark-mode[data-theme="leather"] footer a{
+    background:#1a0f0b !important;
+    border:1px solid #854d3d !important;
+    color:#f5e1c8 !important;
+}
+
+
+/* MIDNIGHT - لبني/أزرق ليلي */
+body.dark-mode[data-theme="midnight"] footer a{
+    background:#020617 !important;
+    border:1px solid #0ea5e9 !important;
+    color:#bae6fd !important;
+}
+
+
+/* Hover */
+body.dark-mode[data-theme="leather"] footer a:hover{
+    background:#3d221a !important;
+    border-color:#d6a086 !important;
+}
+
+
+body.dark-mode[data-theme="midnight"] footer a:hover{
+    background:#0c4a6e !important;
+    border-color:#38bdf8 !important;
+    color:#ffffff !important;
+}
+/* ==========================================================================
+   FOOTER SOCIAL BUTTONS - DARK MODE ALL THEMES
+   ========================================================================== */
+
+/* LEATHER */
+body.dark-mode[data-theme="leather"] footer .social a {
+    background:#2b1b12 !important;
+    color:#f5d0a9 !important;
+    border:1px solid #6b4226 !important;
+}
+
+/* ROYAL */
+body.dark-mode[data-theme="royal"] footer .social a {
+    background:#07142e !important;
+    color:#bfdbfe !important;
+    border:1px solid #1e40af !important;
+}
+
+/* RUBY */
+body.dark-mode[data-theme="ruby"] footer .social a {
+    background:#260606 !important;
+    color:#fecaca !important;
+    border:1px solid #7f1d1d !important;
+}
+
+/* MIDNIGHT */
+body.dark-mode[data-theme="midnight"] footer .social a {
+    background:#082f49 !important;
+    color:#e0f2fe !important;
+    border:1px solid #0ea5e9 !important;
+}
+
+/* EMERALD */
+body.dark-mode[data-theme="emerald"] footer .social a {
+    background:#022c22 !important;
+    color:#a7f3d0 !important;
+    border:1px solid #059669 !important;
+}
+
+/* PINK */
+body.dark-mode[data-theme="pink"] footer .social a {
+    background:#2b0715 !important;
+    color:#fbcfe8 !important;
+    border:1px solid #be185d !important;
+}
+
+/* PURPLE */
+body.dark-mode[data-theme="purple"] footer .social a {
+    background:#1e0b35 !important;
+    color:#e9d5ff !important;
+    border:1px solid #7e22ce !important;
+}
+
+
+/* Hover لكل التيمات */
+body.dark-mode footer .social a:hover {
+    filter:brightness(1.3) !important;
+    transform:translateY(-3px);
+}
+/* ==========================================================================
+   MIDNIGHT THEME: DARK MODE FOOTER SOCIAL BUTTONS WHITE STYLE
+   ========================================================================== */
+
+body.dark-mode[data-theme="midnight"] footer .social a {
+    background: #ffffff !important;
+    color: #0369a1 !important;
+    border: 1px solid #bae6fd !important;
+    font-weight: 700 !important;
+}
+
+/* خلفية الزر عند المرور */
+body.dark-mode[data-theme="midnight"] footer .social a:hover {
+    background: #f0f9ff !important;
+    color: #0284c7 !important;
+}
+/* ==========================================================================
+   MIDNIGHT THEME: DARK MODE FOOTER SOCIAL BUTTONS
+   ========================================================================== */
+
+body.dark-mode[data-theme="midnight"] footer .social a {
+    background-color: #ffffff !important;
+    color: #0369a1 !important; /* لبني غامق مناسب للأبيض */
+    border: 1px solid #bae6fd !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 10px rgba(14,165,233,0.15) !important;
+}
+
+/* Hover */
+body.dark-mode[data-theme="midnight"] footer .social a:hover {
+    background-color: #e0f2fe !important;
+    color: #075985 !important;
+    border-color: #0ea5e9 !important;
+}
+/* ==========================================================================
+   MIDNIGHT THEME: DARK MODE FOOTER TEXT COLORS
+   ========================================================================== */
+
+body.dark-mode[data-theme="midnight"] footer .footer-tagline {
+    color: #e0f2fe !important; /* أبيض لبني */
+}
+
+body.dark-mode[data-theme="midnight"] footer .footer-kemo {
+    color: #bae6fd !important; /* لبني فاتح */
+}
+
+body.dark-mode[data-theme="midnight"] footer .copyright {
+    color: #dbeafe !important; /* أبيض مزرق */
+}
+/* ==========================================================================
+   MIDNIGHT DARK MODE - HOME & CATEGORY FOOTER TEXT
+   ========================================================================== */
+
+body.dark-mode[data-theme="midnight"].home-page footer#contact .footer-tagline,
+body.dark-mode[data-theme="midnight"].category-page footer#contact .footer-tagline {
+    color: #f0f9ff !important;
+}
+
+body.dark-mode[data-theme="midnight"].home-page footer#contact .footer-kemo,
+body.dark-mode[data-theme="midnight"].category-page footer#contact .footer-kemo {
+    color: #dbeafe !important;
+}
+
+body.dark-mode[data-theme="midnight"].home-page footer#contact .copyright,
+body.dark-mode[data-theme="midnight"].category-page footer#contact .copyright {
+    color: #bae6fd !important;
+}
+/* ==========================================================================
+   MIDNIGHT THEME: DARK MODE FOOTER SUB TEXT
+   ========================================================================== */
+
+body.dark-mode[data-theme="midnight"] footer .footer-tagline,
+body.dark-mode[data-theme="midnight"] footer .contact-text,
+body.dark-mode[data-theme="midnight"] footer p {
+    color: #e0f2fe !important; /* أبيض لبني ناعم */
+    font-weight: 500 !important;
+    text-shadow: 0 1px 4px rgba(255,255,255,0.15) !important;
+}
+
+/* الجملة الأصغر تحتها */
+body.dark-mode[data-theme="midnight"] footer .footer-kemo {
+    color: #bae6fd !important; /* لبني فاتح */
+    font-weight: 600 !important;
+}
+
+/* الحقوق */
+body.dark-mode[data-theme="midnight"] footer .copyright {
+    color: #dbeafe !important;
+}
+/* ==========================================================================
+   REMOVE ALL FAVORITES BUTTON - DARK MODE THEMES
+   ========================================================================== */
+
+/* LEATHER */
+body.dark-mode[data-theme="leather"] .kemo-fav-div{
+    background-color:#291711 !important;
+    color:#f5e1c8 !important;
+    border:1px solid #854d3d !important;
+}
+
+/* ROYAL */
+body.dark-mode[data-theme="royal"] .kemo-fav-div{
+    background-color:#0f172a !important;
+    color:#dbeafe !important;
+    border:1px solid #3b82f6 !important;
+}
+
+/* RUBY */
+body.dark-mode[data-theme="ruby"] .kemo-fav-div{
+    background-color:#2b0505 !important;
+    color:#fca5a5 !important;
+    border:1px solid #881337 !important;
+}
+
+/* MIDNIGHT */
+body.dark-mode[data-theme="midnight"] .kemo-fav-div{
+    background-color:#020617 !important;
+    color:#bae6fd !important;
+    border:1px solid #0ea5e9 !important;
+}
+
+/* EMERALD */
+body.dark-mode[data-theme="emerald"] .kemo-fav-div{
+    background-color:#022c22 !important;
+    color:#6ee7b7 !important;
+    border:1px solid #10b981 !important;
+}
+
+/* PINK */
+body.dark-mode[data-theme="pink"] .kemo-fav-div{
+    background-color:#25020c !important;
+    color:#fbcfe8 !important;
+    border:1px solid #e11d48 !important;
+}
+
+/* PURPLE */
+body.dark-mode[data-theme="purple"] .kemo-fav-div{
+    background-color:#1e0a3c !important;
+    color:#e9d5ff !important;
+    border:1px solid #9333ea !important;
+}
+body.favorites-page .kemo-fav-div{
+    margin-top:80px !important;
+    margin-bottom:40px;
+} 
+ body[data-theme="midnight"] .kemo-fav-div{
+    position: relative !important;
+    top: 80px !important;
+}   
