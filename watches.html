@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:wght@500;700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body dir="ltr" class="category-page" data-category="watches">
+
+ <header class="category-header">
+
+    <div class="category-header-content">
+
+        <h1 id="categoryName" data-lang="watches collections">Watches Collection</h1>
+
+        <p data-lang="p.category-Name">Leather & Fashion Collection</p>
+
+    </div>
+
+</header> 
+ <div class="custom-view">
+
+    <button id="viewButton" data-lang="custom View">
+        ✨ Customize Your View ▾
+    </button>
+
+
+    <div class="view-menu" id="viewMenu">
+
+        <div data-sort="low" data-lang="low">
+            Price: Low to High
+        </div>
+
+        <div data-sort="high" data-lang="high">
+            Price: High to Low
+        </div>
+
+        <div data-sort="az" data-lang="az">
+            Name: A - Z
+        </div>
+
+        <div data-sort="default" data-labg="default">
+            Default Order
+        </div>
+
+    </div>
+
+</div>
+     
+<section id="products-section" class="products">
+<div class="space"></div>
+<div class="products">
+
+    <div class="product" data-category="watches" id="watch1">
+        <img src="watch1.jpg">
+        <h3 data-lang="h3 watch1 ">Quartz Gold Watch for women </h3>
+        <p data-lang="p watch1">If You look For a Watch That Fits Most Of Your Clothes This One Is For You</p>
+        <div class="price">22.56$</div>
+        <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>
+ <button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>
+        
+<button onclick="window.open('https://amzn.to/4f43K0a','_blank')" data-lang="purchase">
+Press Here To Purchase The Product From Amazon
+</button>    
+ </div>
+
+    <div class="product" data-category="watches" id="watch2">
+        <img src="watch2.jpg">
+        <h3 data-lang="h3.watch2">Brown Roberto Marino Classic Watch</h3>
+        <p data-lang="p.watch2">Roberto Morino Is One Of The Famous Brand Watches With Good Quality Also This Watch Has Another Colors Like Black You Can Find It On My Page  </p>
+        <div class="price">49.99$</div>
+ <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>       
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>        
+<button onclick="window.open('https://amzn.to/4oT4Q2j','_blank')" data-labg="purchase">
+Press Here To Purchase The Product From Amazon 
+</button>
+     </div>
+    
+<div class="product" data-category="watches" id="watch3">
+        <img src="watch11.jpg">
+        <h3 data-lang="h3 watch11"> Black Roberto Marino Classic Watch</h3>
+        <p data-lang="p watch11">Roberto Morino Is One Of The Famous Brand Watches With Good Quality Also This Watch has Another Colors Like Brown You Can Find It On My Page  </p>
+        <div class="price">49.99$</div>
+<button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>    
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>    
+<button onclick="window.open('https://amzn.to/4aJhStn')" data-lang="purchase">
+Press Here To Purchase The Product From Amazon 
+</button>
+     </div> 
+    
+  <div class="product" data-category="watches" id="watch4">
+        <img src="watch3.jpg">
+        <h3 data-lang="h3 watch3"> Quartz leather Watch for Men </h3>
+        <p data-lang="p watch3">Luxury watch For Happy Days</p>
+        <div class="price">29.42$</div>
+<button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>      
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>      
+ <button onclick="window.open('https://amzn.to/3R4VP9G','_blank')" data-lang="purchase">
+Press Here To Purchase The Product From Amazon
+ </button>
+  </div>
+  
+  
+  <div class="product" data-category="watches" id="watch5">
+        <img src="watch4.jpg">
+        <h3 data-lang="h3 watch4"> Casio leather Watch for Men </h3>
+        <p data-lang="p watch4">If You Look For a Luxury Watch With beautiful Blue And Black Color so buy this one</p>
+        <div class="price">56.86$</div>
+ <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>     
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>     
+ <button onclick="window.open('https://amzn.to/4y9hi2bm','_blank')" data-lang="purchase">
+Press Here To Purchase The Product From Amazon
+</button>   
+     </div>
+    
+<div class="product" data-category="watches" id="watch6">
+        <img src="watch5.jpg">
+        <h3 data-lang="h3 watch5">Beautiful Beige Smart Watch For Women </h3>
+        <p data-labg="p.watch5">If You look For a Watch With Many Wondeful Colors This One Is For You</p>
+        <div class="price">49.99$</div>
+ <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>   
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>    
+ <button onclick="window.open('https://amzn.to/4vgMQ3i')" data-lang="purchase">
+Press Here To Purachase The Product From Amazon
+</button>   
+     </div>
+    
+ 
+ <div class="product" data-category="watches" id="watch7">
+        <img src="watch7.jpg">
+        <h3 data-lang="h3.watch7">Beautiful Grey Smart Watch For Women </h3>
+        <p data-lang="p.watch7">If You look For a Watch With Many Wondeful Colors This One Is For You</p>
+        <div class="price">49.99$</div>
+  <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>   
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>     
+ <button onclick="window.open('https://amzn.to/3QGB44d')" data-labg="purchase">
+Press Here To Purachase The Product From Amazon
+</button>   
+     </div>
+    
+<div class="product" data-category="watches" id="watch8">
+        <img src="watch9.jpg">
+        <h3 data-lang="h3.watch9">Beautiful Green Smart Watch For Women </h3>
+        <p data-lang="p.watch9">If You look For a Watch With Many Wondeful Colors This One Is For You</p>
+        <div class="price">49.99$</div>
+ <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>   
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>    
+ <button onclick="window.open('https://amzn.to/4vqQmIE')" data-lang="purchase">
+Press Here To Purachase The Product From Amazon
+</button>   
+     </div> 
+    
+<div class="product" data-category="watches" id="watch9">
+        <img src="watch6.jpg">
+        <h3 data-lang="h3 watch6">Beautiful Dark Red Smart Watch For Women </h3>
+        <p data-lang="p.watch6">If You look For a Watch With Many Wondeful Colors This One Is For You</p>
+        <div class="price">49.99$</div>
+<button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>    
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>    
+ <button onclick="window.open('https://amzn.to/44i8Lw0')" data-lang="purchase">
+Press Here To Purachase The Product From Amazon
+</button>   
+     </div>
+    
+<div class="product" data-category="watches" id="watch10">
+        <img src="watch8.jpg">
+        <h3 data-lang="h3.watch8">Beautiful Blue Smart Watch For Women </h3>
+        <p data-lang="p.watch8">If You look For a Watch With Many Wondeful Colors This One Is For You</p>
+        <div class="price">49.99$</div>
+ <button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>   
+<button class="fav-btn" onclick="addFavorite(this)"data-lang="add-fav">
+♡ Add To Favorites
+</button>    
+ <button onclick="window.open('https://amzn.to/3SOZPf1')" data-lang="purchase">
+Press Here To Purachase The Product From Amazon
+</button>   
+     </div>
+    
+ <div class="product" data-category="watches" id="watch11">
+        <img src="watch10.jpg">
+        <h3 data-lang="h3.watch10">Beautiful Black Smart Watch For Women </h3>
+        <p data-labg="p.watch10">If You look For a Watch With Many Wondeful Colors This One Is For You</p>
+        <div class="price">49.99$</div>
+<button class="share-btn" onclick="shareProduct(this)">
+    🔗
+</button>     
+<button class="fav-btn" onclick="addFavorite(this)" data-lang="add-fav">
+♡ Add To Favorites
+</button>     
+ <button onclick="window.open('https://amzn.to/4f3cNxm')" data-labg="purchase">
+Press Here To Purachase The Product From Amazon
+</button>   
+     </div>  
+    
+</div>
+</section>
+ <!-- المنتجات -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+    
+<button id="backToTop">↑</button>
+    
+<footer id="contact">
+
+<h2>Kemo Store</h2>
+
+<p class="footer-tagline" data-lang="footer-tagline">
+Amazon Affiliate Marketing
+</p>
+
+<p class="footer-kemo" data-lang="footer-kemo">
+Luxury • Elegance • Timeless Style
+</p>
+
+<div class="social" data-lang="social">
+
+<a href="https://www.facebook.com/karem.kemo.391420/">Facebook</a>
+    
+<a href="about.html" class="social-link" data-lang="about">
+About Me</a>
+    
+<a href="https://www.instagram.com/karem_hendawy/">Instagram</a>
+
+<a href="https://www.tiktok.com/@karemhendawy7257?_r=1&_t=ZS-97raNwY9rWc">TikTok</a>
+
+</div>
+
+<p class="copyright" data-lang="copyright">
+
+© 2026 Kemo Store - جميع الحقوق محفوظة
+
+</p>
+
+    
+</footer>
+
+<script src="script.js"></script>
+<script src="Products.js"></script>   
+</body>
+</html>
